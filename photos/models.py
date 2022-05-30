@@ -18,8 +18,8 @@ class Image(models.Model):
     image = models.ImageField(null=False, blank=False)
     image_name = models.CharField(max_length =30)
     description = models.TextField()
-    category = models.ForeignKey(Category, null=True, on_delete=models.CASCADE)
-    location = models.ForeignKey(Location, null=True, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, null=True, blank=True, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.description
+        return self.image_name

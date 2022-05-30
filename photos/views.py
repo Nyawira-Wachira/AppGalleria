@@ -9,6 +9,8 @@ def gallery(request):
     context = {'images':images}
     return render (request, 'gallery.html',context)
 
-def photo(request):
-    image = Image.objects.get()
-    return render (request, 'photo.html')
+def image(request, image_id): 
+    image = Image.objects.get(id=image_id)
+    return render (request, "photo.html",{"image":image})
+
+   
