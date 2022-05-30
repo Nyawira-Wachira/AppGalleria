@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns=[
     re_path(r'^$',views.gallery,name='gallery'),
-    re_path(r'^photo/(\d+)',views.photo,name ='photo')
+    re_path(r'^photo',views.photo,name ='photo')
 
 ]

@@ -1,20 +1,21 @@
 {%extends 'base.html'%}
 
  {% block content %}
- <div class="col-md-12">
-     <div class="row">
-         {% for photo in photos % }
-         <div class="col-md-4">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text"></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"></p>
+                    </div>
                 </div>
             </div>
-         </div>
-         {% empty %}
-         <h2> No images to display </h2>
-         {% endfor %}
-     <!-- </div>
- </div> -->
+        </div>
+    </div>
  {% endblock %}
+
+
+
+
+ 
