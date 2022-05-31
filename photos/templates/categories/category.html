@@ -1,8 +1,8 @@
 {%extends 'base.html'%}
 
  {% block content %}
- <h2 align="center"> Category:  {{category.name}}</h2>  
- <div class="container">
+ <div class="container my-4">
+      <h2 align="center" style="font-family: Satisfy, cursive; font-size:50px;"> Category:  {{category.name}}</h2>  
     <div class="col-md-4">
         <a href="{% url 'gallery' %}" class="btn btn-outline-info my-3">Go back</a>
     </div>
@@ -12,7 +12,7 @@
             <div class="card">
                 <a href="{% url 'image' image.id %}"><img style="height:240px;"src="{{image.image.url}}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                    <p class="card-text">{{image.image_name}} </p>
+                    <p class="card-text" style="font-family: Satisfy, cursive; font-size:28px;">{{image.image_name}} </p>
                 </div>
             </div>
         </div>
