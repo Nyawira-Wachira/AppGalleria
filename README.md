@@ -8,10 +8,9 @@
 ## Description
 
 AppGalleria is a Django application that enables users to view images on the home page and click on each one of them to view the image details. 
-The application has a navbar that displays image locations and categories where users click to view images associated with the specific categories and locations.
-AppGalleria allows users to view all images associated with a specific category or location. The application also allows users to search images through a search
-form that users input any names associated with a particular image. Basically, AppGalleria is an application that displays a gallery of images and details of
-the images are displayed on clicking the image.
+The application has a navbar that displays image locations and categories where users click to view all images associated with the specific categories and locations.
+The application also allows users to search for images through a search
+form where users have to input any of the names associated with a particular image. Basically, AppGalleria is an application that displays a gallery of images and details of each images are displayed on clicking the image.
 
 
 ## Installation Requirements
