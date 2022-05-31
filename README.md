@@ -40,7 +40,7 @@ form where users have to input any of the names associated with a particular ima
         
 * To run tests for the application run the following command:
 
-        $ 
+        $ python3 manage.py test
 
 ## Technologies Used
 Technologies used in the development of this project include:
