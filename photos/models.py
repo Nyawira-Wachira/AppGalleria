@@ -21,5 +21,10 @@ class Image(models.Model):
     category = models.ForeignKey(Category, null=True, blank=True, on_delete=models.CASCADE)
     location = models.ForeignKey(Location, null=True, blank=True, on_delete=models.CASCADE)
 
+    @classmethod
+    def search_by_image_name(cls,search_term):
+        images = cls.objects.filter(image_name__icontains=search_term)
+        return images
+
     def __str__(self):
         return self.image_name

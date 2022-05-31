@@ -4,7 +4,7 @@
     <div class="container my-5">
         <div class="row">
             {% for image in images %}
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <a href="{% url 'image' image.id %}"><img style="height:240px;"src="{{image.image.url}}" class="card-img-top" alt="..."></a>
                     <div class="card-body">

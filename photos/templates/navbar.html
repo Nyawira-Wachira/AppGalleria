@@ -31,10 +31,19 @@
           </li>
          
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="col-sm-4 col-md-4 navbar-right">
+
+          <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+  
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Image" name="image">
+              <div class="input-group-btn">
+                <button class="btn btn-outline-info"style="margin-left:4px;" type="submit">Search</button>              
+              </div>
+            </div>
+  
+          </form>
+        </div>
       </div>
     </div>
   </nav>
