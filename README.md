@@ -10,11 +10,11 @@
 AppGalleria is a Django application that enables users to view images on the home page and click on each one of them to view the image details. 
 The application has a navbar that displays image locations and categories where users click to view all images associated with the specific categories and locations.
 The application also allows users to search for images through a search
-form where users have to input any of the names associated with a particular image. Basically, AppGalleria is an application that displays a gallery of images and details of each images are displayed on clicking the image.
+form where users have to input any of the names associated with a particular image category. Basically, AppGalleria is an application that displays a gallery of images and where details of each images are displayed on clicking the image.
 
 
 ## Installation Requirements
-* python version 3 
+* Python version 3 
 * pip
 * Django
 * Pillow
@@ -30,7 +30,7 @@ form where users have to input any of the names associated with a particular ima
 * Navigate to the specific location you cloned the project into.
 * Open the AppGalleria project using vs code using command code . or atom . depending on the text editor you're using.
 * Activate the virtual environment.
-* Install all the requirements
+* Install all the requirements.
 
  ## Running the Application
 
@@ -45,7 +45,7 @@ form where users have to input any of the names associated with a particular ima
 ## Technologies Used
 Technologies used in the development of this project include:
 
-* Python3.8
+* Python3
 * Django
 * Bootstrap
 * HTML
