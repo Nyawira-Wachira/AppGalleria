@@ -9,7 +9,7 @@ urlpatterns=[
     re_path(r'^$',views.navbar,name='navbar'),
     path('category/<int:category_Id>',views.category, name='category'),
     path('location/<int:location_Id>',views.location, name='location'),
-    path(r'^search/', views.search_results, name='search_results')
+    re_path(r'^search/', views.search_results, name='search_results')
 ]
 
 if settings.DEBUG:
