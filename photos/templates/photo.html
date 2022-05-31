@@ -5,13 +5,18 @@
     <div class="row justify content-center">
         <div class="col">
             <a href="{% url 'gallery' %}" class="btn btn-outline-info my-3">Go back</a>
-            <div class="col-md-6">
-                
-            <img style="height:300px;"src="{{image.image.url}}" class="card-img-top" alt="..."></a>
-                    
+          <div class="col-md-6">               
+            <img style="height:350px;"src="{{image.image.url}}" class="card-img-top" alt="..."></a>
+          </div><br>
+          <div class="col-md-6">    
+            <div class="card">
+                <div class="card-body">
+                    <p>Name: {{image.image_name}}</p>
+                    <p>Description: {{image.description}}</p>
+                 
                 </div>
-
-            <p></p>
+            </div>
+          </div>
         </div>
     </div>
  </div> 
