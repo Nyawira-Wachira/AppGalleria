@@ -10,7 +10,7 @@
         {% for image in images %}
         <div class="col-md-4">
             <div class="card">
-                <img style="height:210px;" src="{{image.image.url}}" class="card-img-top" alt="">
+                <a href="{% url 'image' image.id %}"><img style="height:210px;"src="{{image.image.url}}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <p class="card-text"> Image Name: {{image.image_name}} </p>
                 </div>
