@@ -6,9 +6,9 @@ from django.conf.urls.static import static
 urlpatterns=[
     re_path(r'^$',views.gallery,name='gallery'),
     re_path(r'^photo/(\d+)',views.image,name ='image'),
-    # re_path(r'^$',views.navbar,name='navbar'),
-    path('category/<int:category_Id>',views.category, name='category')
-    
+    re_path(r'^$',views.navbar,name='navbar'),
+    path('category/<int:category_Id>',views.category, name='category'),
+    path('location/<int:location_Id>',views.location, name='location')
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

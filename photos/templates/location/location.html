@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+ {% block content %}
+ <h2 align="center"> Location:  {{location.name}}</h2>  
+ <div class="container">
+    <div class="col-md-4">
+        <a href="{% url 'gallery' %}" class="btn btn-outline-info my-3">Go back</a>
+    </div>
+    <div class="row justify content-center">
+        {% for image in images %}
+        <div class="col-md-4">
+            <div class="card">
+                <img style="height:210px;" src="{{image.image.url}}" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text"> Image Name: {{image.image_name}} </p>
+                </div>
+            </div>
+        </div>
+
+        {%  endfor %}
+        
+    </div>
+</div>
+{% endblock %}
